@@ -1,0 +1,15 @@
+.all-order-img img {
+    width: 100px;
+}
+
+
+.all-order-div {
+display:flex;
+align-items: center;
+}
+
+
+.card-body{
+    margin-left:20px;
+}
+

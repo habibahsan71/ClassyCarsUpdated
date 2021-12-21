@@ -1,0 +1,23 @@
+.nav-logo img {
+    width: 100px;
+}
+
+.nav-logo span {
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+
+.nav-logo img {
+    width: 100px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .nav-logo img {
+        width: 60px;
+    }
+}
