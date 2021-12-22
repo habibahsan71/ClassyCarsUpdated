@@ -5,13 +5,13 @@ const ManageServices = () => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://pacific-caverns-05949.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     });
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/services/${id}`;
+        const url = `https://pacific-caverns-05949.herokuapp.com/services/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

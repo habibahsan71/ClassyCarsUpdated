@@ -30,7 +30,7 @@ const PlaceOrder = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://pacific-caverns-05949.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setService(data));
 
@@ -58,7 +58,7 @@ const PlaceOrder = () => {
             setError(`Number Please`);
         }
         else {
-            axios.post('http://localhost:5000/AllOrder', orderData)
+            axios.post('https://pacific-caverns-05949.herokuapp.com/AllOrder', orderData)
                 .then(res => {
                     console.log(res);
                     alert('Order Placed')

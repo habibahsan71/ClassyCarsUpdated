@@ -18,7 +18,7 @@ const MyOrder = () => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/AllOrder')
+        fetch('https://pacific-caverns-05949.herokuapp.com/AllOrder')
             .then((res) => res.json())
             .then((data) => setMyOrder(data));
     }, [user]);
@@ -30,7 +30,7 @@ const MyOrder = () => {
 
     //Delete User 
     const handleDeleteOrder = id => {
-        const url = `http://localhost:5000/AllOrder/${orderId}`;
+        const url = `https://pacific-caverns-05949.herokuapp.com/AllOrder/${orderId}`;
         fetch(url, {
             method: 'DELETE'
         })
